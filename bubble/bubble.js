@@ -1,6 +1,5 @@
-var number = [34, 203, 3, 746, 200, 984, 198, 764, 1, 9, 1];
- 
- console.log('Table on begining '+ number);
+var number = [];
+
 function bubbleSort(number)
 {
     
@@ -19,14 +18,15 @@ function bubbleSort(number)
     return(number);
     
 }
- 
 
-/*function change(){
-
-  let number = document.getElementById("myTable").value
+function addNumber(){
+	let number = document.getElementById("myTable").value;
+	window.number.push(number);
     console.log(bubbleSort(number));
 }
-*/
+function change(){
 
-bubbleSort(number);
-console.log("Table after " + bubbleSort(number));
+  let number = document.getElementById("myTable").value
+    console.log(bubbleSort(window.number));
+    
+}
