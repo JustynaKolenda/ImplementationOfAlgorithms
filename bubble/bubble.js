@@ -21,12 +21,12 @@ function bubbleSort(number)
 
 function addNumber(){
 	let number = document.getElementById("myTable").value;
-	window.number.push(number);
-    console.log(bubbleSort(number));
+	window.number.push(parseInt(number));
+    console.log(window.number);
 }
 function change(){
 
   let number = document.getElementById("myTable").value
-    console.log(bubbleSort(window.number));
+  console.log(bubbleSort(window.number));
     
 }
