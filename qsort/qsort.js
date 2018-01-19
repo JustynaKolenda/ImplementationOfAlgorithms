@@ -1,4 +1,4 @@
-var tab = [16, 16, 4, 4, 10, 6, 14, 3, 15, 4, 4, 8, 1, 11, 12, 2, 19, 20, 7, 13, 5, 9, 1, 0, 18, 17];
+var number = [];
 
 function quickSort(arr){
     
@@ -24,6 +24,18 @@ function quickSort(arr){
     return quickSort(smaller).concat(equal).concat(quickSort(greater));
  
 }
+function addNumber(){
+	let number = document.getElementById("quickSort").value;
+	window.number.push(parseInt(number));
+    console.log(window.number);
+}
+function change(){
 
-console.log(tab);
-console.log(quickSort(tab));
+  let number = document.getElementById("quickSort").value
+  console.log(quickSort(window.number));
+    
+}
+
+
+console.log(number);
+console.log(quickSort(number));
